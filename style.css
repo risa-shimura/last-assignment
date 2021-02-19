@@ -1,14 +1,141 @@
 /* --------> common */
-.クラス名 {
-}
-
-.クラス名２ {
-}
 
 /* <-------- common */
 
 /* --------> header */
+.navbar {
+  background-color: rgba(25, 25, 25, 0.7);
+}
 
+.navbar > .navbar-brand {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
+    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
+    "ＭＳ 明朝", serif;
+  font-weight: bold;
+  color: white;
+  font-size: 30px;
+  margin-left: 33px;
+  letter-spacing: 0.6rem;
+}
+
+button,
+button span {
+  display: inline-block;
+  transition: all 0.4s;
+  box-sizing: border-box;
+  outline: none;
+}
+
+button {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  background: none;
+  border: none;
+  appearance: none;
+}
+
+button:focus {
+  outline: none !important;
+}
+
+button:active {
+  left: 1px;
+}
+
+button span {
+  position: absolute;
+  left: 0;
+  width: 40%;
+  height: 3px;
+  background-color: white;
+  border-radius: 1px;
+  cursor: default;
+}
+
+button span:nth-of-type(1) {
+  top: 5px;
+}
+
+button span:nth-of-type(2) {
+  top: 18px;
+}
+
+button span:nth-of-type(3) {
+  bottom: 32px;
+}
+
+.navbar-nav {
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  font-size: 13px;
+  margin-right: 35px;
+}
+
+.navbar-nav > li > a {
+  margin: 15px 12px;
+  color: white;
+  outline: none;
+}
+
+.navbar-nav > li > a:hover {
+  color: rgba(178, 178, 178, 0.9);
+  transition: 0.3s;
+}
+
+.dropdown > .dropdown-menu {
+  top: 70.5px;
+  width: 225px;
+}
+
+.dropdown-menu > a {
+  color: white;
+  background-color: black;
+  font-size: 13px;
+  margin-top: -8px;
+  padding: 13px 10px 15px 30px;
+  margin-bottom: -8px;
+  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
+    sans-serif;
+  display: block;
+}
+
+.navbar-nav > li > .dropdown-menu > a:hover {
+  background-color: rgb(96, 63, 42);
+  color: white;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    background-color: black;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav > li > a:hover {
+    color: white;
+    transition: 0s;
+  }
+
+  .navbar-nav > li > .dropdown-menu {
+    width: 100%;
+    background-color: black;
+  }
+
+  .navbar-nav > li > .dropdown-menu > a {
+    font-size: 12px;
+  }
+
+  .navbar-nav > li > .dropdown-menu > a:hover {
+    background-color: black;
+    transition: 0s;
+  }
+}
 /* <-------- header */
 
 /* --------> main */
