@@ -15,18 +15,18 @@
   color: white;
   font-size: 30px;
   margin-left: 33px;
-  letter-spacing: 0.6rem;
+  letter-spacing: 13px;
 }
 
-button,
-button span {
+header > nav > button,
+header > nav > button span {
   display: inline-block;
   transition: all 0.4s;
   box-sizing: border-box;
   outline: none;
 }
 
-button {
+header > nav > button {
   position: relative;
   width: 40px;
   height: 60px;
@@ -35,33 +35,33 @@ button {
   appearance: none;
 }
 
-button:focus {
+header > nav > button:focus {
   outline: none !important;
 }
 
-button:active {
+header > nav > button:active {
   left: 1px;
 }
 
-button span {
+header > nav > button span {
   position: absolute;
   left: 0;
-  width: 40%;
+  width: 17px;
   height: 3px;
   background-color: white;
   border-radius: 1px;
   cursor: default;
 }
 
-button span:nth-of-type(1) {
+header > nav > button span:nth-of-type(1) {
   top: 5px;
 }
 
-button span:nth-of-type(2) {
+header > nav > button span:nth-of-type(2) {
   top: 18px;
 }
 
-button span:nth-of-type(3) {
+header > nav > button span:nth-of-type(3) {
   bottom: 32px;
 }
 
@@ -111,6 +111,12 @@ button span:nth-of-type(3) {
 @media screen and (max-width: 1024px) {
   .navbar {
     background-color: black;
+  }
+
+  .navbar > .navbar-brand {
+    font-size: 24px;
+    margin-left: 3px;
+    letter-spacing: 5px;
   }
 
   .navbar-nav {
