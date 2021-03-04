@@ -108,7 +108,7 @@ header > nav > button span:nth-of-type(3) {
   transition: 0.5s;
 }
 
-@media screen and (max-width: 1024px) {
+@media (max-width: 1199.98px) {
   .navbar {
     background-color: black;
   }
