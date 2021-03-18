@@ -5,17 +5,21 @@
 /* --------> header */
 .navbar {
   background-color: rgba(25, 25, 25, 0.7);
+  height: 85px;
 }
 
-.navbar > .navbar-brand {
-  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3",
-    "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝",
-    "ＭＳ 明朝", serif;
-  font-weight: bold;
-  color: white;
-  font-size: 30px;
+.header-logo > .navbar-brand > img {
+  width: 150px;
+  align-items: center;
   margin-left: 33px;
-  letter-spacing: 13px;
+  margin-bottom: 5px;
+}
+
+header > nav > button > .navbar-toggler {
+  cursor: default;
+  padding: 0;
+  outline: none;
+  border: none;
 }
 
 header > nav > button,
@@ -23,29 +27,22 @@ header > nav > button span {
   display: inline-block;
   transition: all 0.4s;
   box-sizing: border-box;
-  outline: none;
 }
 
 header > nav > button {
   position: relative;
-  width: 40px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   background: none;
   border: none;
   appearance: none;
-}
-
-header > nav > button:focus {
-  outline: none !important;
-}
-
-header > nav > button:active {
-  left: 1px;
+  left: 15px;
+  bottom: 3px;
 }
 
 header > nav > button span {
   position: absolute;
-  left: 0;
+  left: 15px;
   width: 17px;
   height: 3px;
   background-color: white;
@@ -54,27 +51,33 @@ header > nav > button span {
 }
 
 header > nav > button span:nth-of-type(1) {
-  top: 5px;
+  top: 16px;
 }
 
 header > nav > button span:nth-of-type(2) {
-  top: 18px;
+  top: 22px;
 }
 
 header > nav > button span:nth-of-type(3) {
-  bottom: 32px;
+  bottom: 18px;
 }
 
 .navbar-nav {
+  display: flex;
+  width: 100%;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
   font-size: 13px;
-  margin-right: 35px;
+  margin-right: -100px;
+}
+
+.navbar-nav > li {
+  flex: 0.08 0 auto;
 }
 
 .navbar-nav > li > a {
-  margin: 15px 12px;
+  left: 100px;
   color: white;
   outline: none;
 }
@@ -85,7 +88,7 @@ header > nav > button span:nth-of-type(3) {
 }
 
 .dropdown > .dropdown-menu {
-  top: 70.5px;
+  top: 60px;
   width: 225px;
 }
 
@@ -93,34 +96,40 @@ header > nav > button span:nth-of-type(3) {
   color: white;
   background-color: black;
   font-size: 13px;
-  margin-top: -8px;
-  padding: 13px 10px 15px 30px;
-  margin-bottom: -8px;
+  height: auto;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
   display: block;
+  line-height: 35px;
 }
 
 .navbar-nav > li > .dropdown-menu > a:hover {
   background-color: rgb(96, 63, 42);
   color: white;
   transition: 0.5s;
+  height: auto;
 }
 
-@media (max-width: 1199.98px) {
+@media (max-width: 1199.98px), (max-width: 767px), (max-width: 991px) {
   .navbar {
     background-color: black;
+    height: 60px;
   }
 
-  .navbar > .navbar-brand {
-    font-size: 24px;
+  .header-logo > .navbar-brand > img {
+    width: 120px;
     margin-left: 3px;
-    letter-spacing: 5px;
+    margin-bottom: 10px;
   }
 
   .navbar-nav {
-    width: 100%;
+    background-color: black;
+  }
+
+  .navbar-nav > li {
+    height: auto;
+    line-height: 30px;
   }
 
   .navbar-nav > li > a:hover {
@@ -129,12 +138,14 @@ header > nav > button span:nth-of-type(3) {
   }
 
   .navbar-nav > li > .dropdown-menu {
-    width: 100%;
     background-color: black;
+    padding-left: 15px;
   }
 
   .navbar-nav > li > .dropdown-menu > a {
     font-size: 12px;
+    line-height: 40px;
+    padding: 0;
   }
 
   .navbar-nav > li > .dropdown-menu > a:hover {
