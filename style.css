@@ -67,7 +67,6 @@ header > nav > button span:nth-of-type(3) {
 
 .navbar-nav {
   display: flex;
-  width: 100%;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
@@ -94,7 +93,7 @@ header > nav > button span:nth-of-type(3) {
 }
 
 .dropdown > .dropdown-menu {
-  top: 60px;
+  top: 52px;
   width: 225px;
   padding: 0;
   border: 0;
