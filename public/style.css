@@ -15,6 +15,10 @@
   margin-bottom: 5px;
 }
 
+button:focus {
+  outline: none;
+}
+
 header > nav > button > .navbar-toggler {
   cursor: default;
   padding: 0;
@@ -88,8 +92,9 @@ header > nav > button span:nth-of-type(3) {
 }
 
 .dropdown > .dropdown-menu {
-  top: 60px;
+  top: 58px;
   width: 225px;
+  padding: 0;
 }
 
 .dropdown-menu > a {
@@ -112,13 +117,18 @@ header > nav > button span:nth-of-type(3) {
 }
 
 @media (max-width: 1199.98px), (max-width: 767px), (max-width: 991px) {
+  .navbar,
+  .navbar-nav {
+    height: 100%;
+  }
+
   .navbar {
     background-color: black;
     height: 60px;
   }
 
   .header-logo > .navbar-brand > img {
-    width: 120px;
+    width: 110px;
     margin-left: 3px;
     margin-bottom: 10px;
   }
@@ -129,7 +139,7 @@ header > nav > button span:nth-of-type(3) {
 
   .navbar-nav > li {
     height: auto;
-    line-height: 30px;
+    line-height: 50px;
   }
 
   .navbar-nav > li > a:hover {
@@ -144,7 +154,7 @@ header > nav > button span:nth-of-type(3) {
 
   .navbar-nav > li > .dropdown-menu > a {
     font-size: 12px;
-    line-height: 40px;
+    line-height: 50px;
     padding: 0;
   }
 
