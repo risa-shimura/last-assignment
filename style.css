@@ -16,7 +16,7 @@
   margin-bottom: 5px;
 }
 
-button:focus {
+header > nav > button > button:focus {
   outline: none;
 }
 
@@ -137,6 +137,7 @@ header > nav > button span:nth-of-type(3) {
 
   .navbar-nav {
     background-color: black;
+    margin: 0;
   }
 
   .navbar-nav > li {
@@ -163,6 +164,16 @@ header > nav > button span:nth-of-type(3) {
   .navbar-nav > li > .dropdown-menu > a:hover {
     background-color: black;
     transition: 0s;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  header > nav > button {
+    display: flex;
+  }
+
+  .navbar-nav > li > a {
+    display: none;
   }
 }
 /* <-------- header */
