@@ -20,7 +20,7 @@ header > nav > button > button:focus {
   outline: none;
 }
 
-header > nav > button > .navbar-toggler {
+header > nav > .navbar-toggler {
   cursor: default;
   padding: 0;
   outline: none;
@@ -119,7 +119,7 @@ header > nav > button span:nth-of-type(3) {
   height: auto;
 }
 
-@media (max-width: 1199.98px), (max-width: 767px), (max-width: 991px) {
+@media (max-width: 1199.98px), (max-width: 991px), (max-width: 767px) {
   .navbar,
   .navbar-nav {
     height: 100%;
@@ -168,10 +168,6 @@ header > nav > button span:nth-of-type(3) {
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  header > nav > button {
-    display: flex;
-  }
-
   .navbar-nav > li > a {
     display: none;
   }
