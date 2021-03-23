@@ -21,7 +21,6 @@ header > nav > button > button:focus {
 }
 
 header > nav > .navbar-toggler {
-  cursor: default;
   padding: 0;
   outline: none;
   border: none;
@@ -50,19 +49,18 @@ header > nav > button span {
   height: 3px;
   background-color: white;
   border-radius: 1px;
-  cursor: default;
 }
 
 header > nav > button span:nth-of-type(1) {
-  top: 19px;
+  top: 20px;
 }
 
 header > nav > button span:nth-of-type(2) {
-  top: 26px;
+  top: 27px;
 }
 
 header > nav > button span:nth-of-type(3) {
-  bottom: 21px;
+  bottom: 22px;
 }
 
 .navbar-nav {
@@ -119,7 +117,7 @@ header > nav > button span:nth-of-type(3) {
   height: auto;
 }
 
-@media (max-width: 1199.98px), (max-width: 991px), (max-width: 767px) {
+@media (max-width: 1199.98px), (max-width: 991.98px), (max-width: 767.98px) {
   .navbar,
   .navbar-nav {
     height: 100%;
@@ -167,7 +165,7 @@ header > nav > button span:nth-of-type(3) {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199.98px) {
   .navbar-nav > li > a {
     display: none;
   }
