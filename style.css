@@ -3,17 +3,43 @@
 /* <-------- common */
 
 /* --------> header */
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .navbar {
-  background-color: rgba(25, 25, 25, 0.7);
-  height: 85px;
+  height: 90px;
   padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 92%;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header-logo {
+  display: flex;
+}
+
+.header-logo > .navbar-brand {
+  align-items: center;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  line-height: 1.5;
 }
 
 .header-logo > .navbar-brand > img {
-  width: 150px;
-  align-items: center;
-  margin-left: 33px;
-  margin-bottom: 5px;
+  width: 143px;
+  height: 24px;
 }
 
 header > nav > button > button:focus {
@@ -21,9 +47,36 @@ header > nav > button > button:focus {
 }
 
 header > nav > .navbar-toggler {
-  padding: 0;
+  padding: 1px 6px;
   outline: none;
   border: none;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 0;
+  appearance: none;
+  color: #ffffff;
+  line-height: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: center;
+}
+
+header > nav > .navbar-toggler .collapsed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  background: transparent;
+  line-height: 60px;
+  text-align: center;
+  display: block;
+  padding: 1px 6px;
+  border: none;
+  outline: none;
 }
 
 header > nav > button,
@@ -33,21 +86,12 @@ header > nav > button span {
   box-sizing: border-box;
 }
 
-header > nav > button {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  background: none;
-  border: none;
-  appearance: none;
-}
-
 header > nav > button span {
   position: absolute;
   left: 20px;
   width: 17px;
   height: 3px;
-  background-color: white;
+  background-color: #ffffff;
   border-radius: 1px;
 }
 
@@ -60,7 +104,13 @@ header > nav > button span:nth-of-type(2) {
 }
 
 header > nav > button span:nth-of-type(3) {
-  bottom: 22px;
+  bottom: 23px;
+}
+
+header .navbar-collapse {
+  height: 100%;
+  font-size: 14px;
+  line-height: 90px;
 }
 
 .navbar-nav {
@@ -68,21 +118,24 @@ header > nav > button span:nth-of-type(3) {
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
     sans-serif;
-  font-size: 13px;
-  margin-right: 50px;
+  height: 100%;
 }
 
 .navbar-nav > li {
-  display: inline;
-  padding: 0 10px;
-  margin-right: auto;
+  box-sizing: border-box;
+  width: 100%;
 }
 
 .navbar-nav > li > a {
-  left: 100px;
-  color: white;
+  color: #ffffff;
   outline: none;
-  padding: 0;
+  position: relative;
+  height: 100%;
+  padding-right: 21px;
+  padding-left: 21px;
+  padding-top: 0;
+  line-height: 50px;
+  padding-bottom: 0;
 }
 
 .navbar-nav > li > a:hover {
@@ -99,9 +152,9 @@ header > nav > button span:nth-of-type(3) {
 }
 
 .dropdown-menu > a {
-  color: white;
-  background-color: black;
-  font-size: 13px;
+  color: #ffffff;
+  background-color: #000000;
+  font-size: 14px;
   height: auto;
   font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
     "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
@@ -112,35 +165,61 @@ header > nav > button span:nth-of-type(3) {
 
 .navbar-nav > li > .dropdown-menu > a:hover {
   background-color: rgb(96, 63, 42);
-  color: white;
+  color: #ffffff;
   transition: 0.5s;
   height: auto;
 }
 
 @media (max-width: 1199.98px), (max-width: 991.98px), (max-width: 767.98px) {
-  .navbar,
-  .navbar-nav {
-    height: 100%;
+  header {
+    background-color: #000000;
+    position: static;
+    height: 60px;
+    line-height: 60px;
   }
 
   .navbar {
-    background-color: black;
-    height: 60px;
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    height: 100%;
   }
 
   .header-logo > .navbar-brand > img {
-    width: 140px;
-    margin-left: 40px;
+    width: 110px;
+    height: auto;
+  }
+
+  .navbar-collapse {
+    z-index: 99;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: #000000;
   }
 
   .navbar-nav {
-    background-color: black;
-    margin: 0;
+    display: block;
+    height: auto;
   }
 
   .navbar-nav > li {
-    height: auto;
-    line-height: 50px;
+    width: 100%;
+  }
+
+  .navbar-nav > li > a {
+    padding: 0 20px;
+    border: 0;
+    display: block;
+    font-size: 13px;
+    color: #ffffff;
   }
 
   .navbar-nav > li > a:hover {
@@ -165,11 +244,6 @@ header > nav > button span:nth-of-type(3) {
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  .navbar-nav > li > a {
-    display: none;
-  }
-}
 /* <-------- header */
 
 /* --------> main */
