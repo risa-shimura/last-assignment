@@ -47,8 +47,9 @@ header > nav > button > button:focus {
 }
 
 header > nav > .navbar-toggler {
-  padding: 0;
+  padding: 1 6px;
   border: 0;
+  outline: 0;
 }
 
 header > nav > button {
@@ -196,9 +197,8 @@ header .navbar-collapse {
     background-color: #000000;
   }
 
-  .navbar-nav {
-    display: block;
-    height: auto;
+  .collapse:not(.show) {
+    display: none;
   }
 
   .navbar-nav > .nav-item {
@@ -224,6 +224,7 @@ header .navbar-collapse {
     background-color: #000000;
     padding-left: 14px;
     width: 100%;
+    position: static;
   }
 
   .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
@@ -246,8 +247,12 @@ header .navbar-collapse {
   }
 }
 
+header > nav > .navbar-toggler {
+  display: flex;
+}
+
 @media (min-width: 1200px) {
-  .navbar-expand-lg .navbar-toggler {
+  header > nav > .navbar-toggler {
     display: none;
   }
 }
