@@ -46,13 +46,12 @@ header > nav > button > button:focus {
   outline: none;
 }
 
-header > nav > .navbar-toggler {
+header > nav > button {
   padding: 1px 6px;
   outline: none;
   border: none;
   width: 60px;
   height: 60px;
-  background: transparent;
   border: 0;
   appearance: none;
   color: #ffffff;
@@ -63,40 +62,23 @@ header > nav > .navbar-toggler {
   text-align: center;
 }
 
-header > nav > .navbar-toggler .collapsed {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  border: 0;
-  background: transparent;
-  line-height: 60px;
-  text-align: center;
-  display: block;
-  padding: 1px 6px;
-  border: none;
-  outline: none;
-}
-
 header > nav > button,
 header > nav > button span {
   display: inline-block;
   transition: all 0.4s;
-  box-sizing: border-box;
 }
 
 header > nav > button span {
   position: absolute;
-  left: 20px;
-  width: 17px;
-  height: 3px;
+  left: 23px;
+  width: 16px;
+  height: 2px;
   background-color: #ffffff;
   border-radius: 1px;
 }
 
 header > nav > button span:nth-of-type(1) {
-  top: 20px;
+  top: 22px;
 }
 
 header > nav > button span:nth-of-type(2) {
@@ -104,11 +86,11 @@ header > nav > button span:nth-of-type(2) {
 }
 
 header > nav > button span:nth-of-type(3) {
-  bottom: 23px;
+  bottom: 25px;
 }
 
 header .navbar-collapse {
-  height: 100%;
+  flex-grow: 0;
   font-size: 14px;
   line-height: 90px;
 }
@@ -121,12 +103,12 @@ header .navbar-collapse {
   height: 100%;
 }
 
-.navbar-nav > li {
+.navbar-nav > .nav-item {
   box-sizing: border-box;
   width: 100%;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > li > .nav-link {
   color: #ffffff;
   outline: none;
   position: relative;
@@ -134,21 +116,22 @@ header .navbar-collapse {
   padding-right: 21px;
   padding-left: 21px;
   padding-top: 0;
-  line-height: 50px;
   padding-bottom: 0;
 }
 
 .navbar-nav > li > a:hover {
-  color: rgba(178, 178, 178, 0.9);
+  color: #999999;
   transition: 0.3s;
 }
 
 .dropdown > .dropdown-menu {
-  top: 52px;
-  width: 225px;
   padding: 0;
   border: 0;
   margin: 0;
+  top: 100%;
+  position: absolute;
+  height: auto;
+  line-height: 1.2;
 }
 
 .dropdown-menu > a {
@@ -156,21 +139,21 @@ header .navbar-collapse {
   background-color: #000000;
   font-size: 14px;
   height: auto;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   display: block;
-  line-height: 35px;
+  width: 220px;
+  padding: 17px 18px;
 }
 
 .navbar-nav > li > .dropdown-menu > a:hover {
-  background-color: rgb(96, 63, 42);
+  background-color: #442602;
   color: #ffffff;
   transition: 0.5s;
   height: auto;
 }
 
-@media (max-width: 1199.98px), (max-width: 991.98px), (max-width: 767.98px) {
+@media (max-width: 1199px) {
   header {
     background-color: #000000;
     position: static;
@@ -196,7 +179,6 @@ header .navbar-collapse {
   }
 
   .navbar-collapse {
-    z-index: 99;
     position: absolute;
     top: 60px;
     left: 0;
@@ -220,27 +202,38 @@ header .navbar-collapse {
     display: block;
     font-size: 13px;
     color: #ffffff;
+    position: relative;
+    line-height: 50px;
   }
 
   .navbar-nav > li > a:hover {
-    color: white;
+    color: #000000;
     transition: 0s;
   }
 
   .navbar-nav > li > .dropdown-menu {
-    background-color: black;
-    padding-left: 15px;
+    background-color: #000000;
+    padding-left: 14px;
+    width: 100%;
   }
 
   .navbar-nav > li > .dropdown-menu > a {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 50px;
-    padding: 0;
+    padding: 0 20px;
+    width: 100%;
+    height: 50px;
   }
 
   .navbar-nav > li > .dropdown-menu > a:hover {
-    background-color: black;
+    background-color: #000000;
     transition: 0s;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: none;
   }
 }
 
