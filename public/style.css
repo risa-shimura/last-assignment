@@ -46,6 +46,11 @@ header > nav > button > button:focus {
   outline: none;
 }
 
+header > nav > .navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+
 header > nav > button {
   padding: 1px 6px;
   outline: none;
@@ -60,6 +65,10 @@ header > nav > button {
   top: 0;
   right: 0;
   text-align: center;
+}
+
+header > nav > button > button:focus {
+  outline: none;
 }
 
 header > nav > button,
@@ -108,7 +117,7 @@ header .navbar-collapse {
   width: 100%;
 }
 
-.navbar-nav > li > .nav-link {
+.navbar-nav > .nav-item > .nav-link {
   color: #ffffff;
   outline: none;
   position: relative;
@@ -119,7 +128,7 @@ header .navbar-collapse {
   padding-bottom: 0;
 }
 
-.navbar-nav > li > a:hover {
+.navbar-nav > .nav-item > .nav-link:hover {
   color: #999999;
   transition: 0.3s;
 }
@@ -134,7 +143,7 @@ header .navbar-collapse {
   line-height: 1.2;
 }
 
-.dropdown-menu > a {
+.dropdown-menu > .dropdown-item {
   color: #ffffff;
   background-color: #000000;
   font-size: 14px;
@@ -146,7 +155,7 @@ header .navbar-collapse {
   padding: 17px 18px;
 }
 
-.navbar-nav > li > .dropdown-menu > a:hover {
+.navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
   background-color: #442602;
   color: #ffffff;
   transition: 0.5s;
@@ -192,11 +201,11 @@ header .navbar-collapse {
     height: auto;
   }
 
-  .navbar-nav > li {
+  .navbar-nav > .nav-item {
     width: 100%;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav > .nav-item > .nav-link {
     padding: 0 20px;
     border: 0;
     display: block;
@@ -206,18 +215,18 @@ header .navbar-collapse {
     line-height: 50px;
   }
 
-  .navbar-nav > li > a:hover {
-    color: #000000;
+  .navbar-nav > .nav-item > .nav-link:hover {
+    color: #ffffff;
     transition: 0s;
   }
 
-  .navbar-nav > li > .dropdown-menu {
+  .navbar-nav > .nav-item > .dropdown-menu {
     background-color: #000000;
     padding-left: 14px;
     width: 100%;
   }
 
-  .navbar-nav > li > .dropdown-menu > a {
+  .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
     font-size: 13px;
     line-height: 50px;
     padding: 0 20px;
@@ -225,9 +234,15 @@ header .navbar-collapse {
     height: 50px;
   }
 
-  .navbar-nav > li > .dropdown-menu > a:hover {
+  .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
     background-color: #000000;
     transition: 0s;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-nav > .nav-link {
+    padding: 0;
   }
 }
 
