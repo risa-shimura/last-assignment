@@ -176,11 +176,11 @@ header .navbar-collapse {
     width: 100%;
     max-width: none;
     height: 100%;
+    padding-left: 56px;
   }
 
   .header-logo {
     height: 100%;
-    padding-left: 56px;
   }
 
   .header-logo > .navbar-brand > img {
@@ -250,6 +250,12 @@ header .navbar-collapse {
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .navbar {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
 @media (min-width: 992px) {
   .navbar-nav > .nav-link {
     padding: 0;
