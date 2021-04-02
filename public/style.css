@@ -47,7 +47,7 @@ header > nav > button > button:focus {
 }
 
 header > nav > .navbar-toggler {
-  padding: 1 6px;
+  padding: 1px 6px;
   border: 0;
   outline: 0;
 }
@@ -176,16 +176,20 @@ header .navbar-collapse {
     width: 100%;
     max-width: none;
     height: 100%;
-    padding: 0 20px;
   }
 
   .header-logo {
     height: 100%;
+    padding-left: 56px;
   }
 
   .header-logo > .navbar-brand > img {
     width: 110px;
     height: auto;
+  }
+
+  header > nav > button {
+    display: block;
   }
 
   .navbar-collapse {
@@ -199,6 +203,11 @@ header .navbar-collapse {
 
   .collapse:not(.show) {
     display: none;
+  }
+
+  .navbar-nav {
+    display: block;
+    height: auto;
   }
 
   .navbar-nav > .nav-item {
@@ -238,22 +247,6 @@ header .navbar-collapse {
   .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
     background-color: #000000;
     transition: 0s;
-  }
-}
-
-@media (min-width: 992px) {
-  .navbar-nav > .nav-link {
-    padding: 0;
-  }
-}
-
-header > nav > .navbar-toggler {
-  display: flex;
-}
-
-@media (min-width: 1200px) {
-  header > nav > .navbar-toggler {
-    display: none;
   }
 }
 
