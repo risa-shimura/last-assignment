@@ -250,29 +250,9 @@ header .navbar-collapse {
   }
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 767px) {
   .navbar {
-    width: 100%;
     padding: 0 20px;
-  }
-}
-@media (min-width: 992px) {
-  .navbar-nav > .nav-link {
-    padding: 0;
-  }
-
-  header > nav > .navbar-toggler {
-    display: flex;
-  }
-
-  .navbar-nav {
-    flex-direction: column;
-  }
-}
-
-@media (min-width: 1200px) {
-  header > nav > .navbar-toggler {
-    display: none;
   }
 }
 
