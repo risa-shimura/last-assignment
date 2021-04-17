@@ -60,7 +60,7 @@ header > nav > button {
   height: 60px;
   border: 0;
   appearance: none;
-  color: #ffffff;
+  color: #fff;
   line-height: 60px;
   position: absolute;
   top: 0;
@@ -75,7 +75,6 @@ header > nav > button > button:focus {
 header > nav > button,
 header > nav > button span {
   display: inline-block;
-  transition: all 0.4s;
 }
 
 header > nav > button span {
@@ -83,7 +82,7 @@ header > nav > button span {
   left: 23px;
   width: 16px;
   height: 2px;
-  background-color: #ffffff;
+  background-color: #fff;
   border-radius: 1px;
 }
 
@@ -114,24 +113,20 @@ header .navbar-collapse {
 }
 
 .navbar-nav > .nav-item {
-  box-sizing: border-box;
   width: 100%;
 }
 
 .navbar-nav > .nav-item > .nav-link {
-  color: #ffffff;
+  color: #fff;
   outline: none;
   position: relative;
   height: 100%;
-  padding-right: 21px;
-  padding-left: 21px;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding: 0 21px;
+  transition: 0.3s;
 }
 
 .navbar-nav > .nav-item > .nav-link:hover {
-  color: #999999;
-  transition: 0.3s;
+  color: #999;
 }
 
 .dropdown > .dropdown-menu {
@@ -145,27 +140,25 @@ header .navbar-collapse {
 }
 
 .dropdown-menu > .dropdown-item {
-  color: #ffffff;
-  background-color: #000000;
+  color: #fff;
+  background-color: #000;
   font-size: 14px;
-  height: auto;
   font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   display: block;
   width: 220px;
   padding: 17px 18px;
+  transition: 0.5s;
 }
 
 .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
   background-color: #442602;
-  color: #ffffff;
-  transition: 0.5s;
-  height: auto;
+  color: #fff;
 }
 
 @media (max-width: 1199px) {
   header {
-    background-color: #000000;
+    background-color: #000;
     position: static;
     height: 60px;
     line-height: 60px;
@@ -188,17 +181,13 @@ header .navbar-collapse {
     height: auto;
   }
 
-  header > nav > button {
-    display: block;
-  }
-
   .navbar-collapse {
     position: absolute;
     top: 60px;
     left: 0;
     width: 100%;
     height: auto;
-    background-color: #000000;
+    background-color: #000;
   }
 
   .collapse:not(.show) {
@@ -219,18 +208,18 @@ header .navbar-collapse {
     border: 0;
     display: block;
     font-size: 13px;
-    color: #ffffff;
+    color: #fff;
     position: relative;
     line-height: 50px;
-  }
-
-  .navbar-nav > .nav-item > .nav-link:hover {
-    color: #ffffff;
     transition: 0s;
   }
 
+  .navbar-nav > .nav-item > .nav-link:hover {
+    color: #fff;
+  }
+
   .navbar-nav > .nav-item > .dropdown-menu {
-    background-color: #000000;
+    background-color: #000;
     padding-left: 14px;
     width: 100%;
     position: static;
@@ -245,7 +234,7 @@ header .navbar-collapse {
   }
 
   .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
-    background-color: #000000;
+    background-color: #000;
     transition: 0s;
   }
 }
