@@ -1,80 +1,51 @@
 /* --------> common */
-
+body {
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #000;
+  line-height: 1;
+}
 /* <-------- common */
 
 /* --------> header */
 header {
   position: absolute;
-  top: 0;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.navbar {
-  height: 90px;
+.header-inner {
   padding: 0;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
-  position: relative;
-  width: 92%;
   max-width: 1180px;
   margin-right: auto;
   margin-left: auto;
 }
 
-.header-logo {
-  display: flex;
-}
-
-.header-logo > .navbar-brand {
-  align-items: center;
-  overflow: hidden;
+.header-logo > a {
   padding: 0;
   margin: 0;
   display: flex;
-  line-height: 1.5;
 }
 
-.header-logo > .navbar-brand > img {
+header .navbar-brand > img {
   width: 143px;
   height: 24px;
 }
 
-header > nav > button > button:focus {
-  outline: none;
-}
-
-header > nav > .navbar-toggler {
+header .hamburger-menu {
   padding: 1px 6px;
   border: 0;
   outline: 0;
-}
-
-header > nav > button {
-  padding: 1px 6px;
-  outline: none;
-  border: none;
   width: 60px;
   height: 60px;
-  border: 0;
-  appearance: none;
-  color: #fff;
-  line-height: 60px;
   position: absolute;
-  top: 0;
   right: 0;
-  text-align: center;
 }
 
-header > nav > button > button:focus {
+header .hamburger-menu:focus {
   outline: none;
-}
-
-header > nav > button,
-header > nav > button span {
-  display: inline-block;
 }
 
 header > nav > button span {
@@ -98,60 +69,39 @@ header > nav > button span:nth-of-type(3) {
   bottom: 25px;
 }
 
-header .navbar-collapse {
+header .global-nav {
   flex-grow: 0;
   font-size: 14px;
   line-height: 90px;
 }
 
-.navbar-nav {
-  display: flex;
-  font-family: "Hiragino Sans W3", "Hiragino Kaku Gothic ProN",
-    "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic",
-    sans-serif;
-  height: 100%;
-}
-
-.navbar-nav > .nav-item {
-  width: 100%;
-}
-
-.navbar-nav > .nav-item > .nav-link {
+header .global-nav > .menu .nav-link {
   color: #fff;
-  outline: none;
-  position: relative;
-  height: 100%;
   padding: 0 21px;
   transition: 0.3s;
 }
 
-.navbar-nav > .nav-item > .nav-link:hover {
+header .menu .nav-link:hover {
   color: #999;
 }
 
-.dropdown > .dropdown-menu {
+header .dropdown-group {
   padding: 0;
   border: 0;
   margin: 0;
-  top: 100%;
-  position: absolute;
-  height: auto;
   line-height: 1.2;
 }
 
-.dropdown-menu > .dropdown-item {
+header .dropdown-group > a {
   color: #fff;
   background-color: #000;
   font-size: 14px;
-  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
-    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-  display: block;
   width: 220px;
   padding: 17px 18px;
   transition: 0.5s;
 }
 
-.navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
+header .dropdown-group > a:hover {
   background-color: #442602;
   color: #fff;
 }
@@ -159,88 +109,69 @@ header .navbar-collapse {
 @media (max-width: 1199px) {
   header {
     background-color: #000;
-    position: static;
     height: 60px;
-    line-height: 60px;
   }
 
-  .navbar {
-    display: block;
-    width: 100%;
-    max-width: none;
+  .header-inner {
     height: 100%;
-    padding-left: 56px;
+    padding-left: 5%;
   }
 
-  .header-logo {
-    height: 100%;
-  }
-
-  .header-logo > .navbar-brand > img {
-    width: 110px;
-    height: auto;
-  }
-
-  .navbar-collapse {
+  header .global-nav {
     position: absolute;
     top: 60px;
-    left: 0;
     width: 100%;
-    height: auto;
+    left: 0;
     background-color: #000;
   }
 
-  .collapse:not(.show) {
-    display: none;
-  }
-
-  .navbar-nav {
-    display: block;
-    height: auto;
-  }
-
-  .navbar-nav > .nav-item {
-    width: 100%;
-  }
-
-  .navbar-nav > .nav-item > .nav-link {
-    padding: 0 20px;
-    border: 0;
-    display: block;
+  header .global-nav > .menu .nav-link {
+    padding: 0 5%;
     font-size: 13px;
-    color: #fff;
-    position: relative;
     line-height: 50px;
     transition: 0s;
   }
 
-  .navbar-nav > .nav-item > .nav-link:hover {
+  header .menu .nav-link:hover {
     color: #fff;
   }
 
-  .navbar-nav > .nav-item > .dropdown-menu {
+  header .dropdown-group {
     background-color: #000;
     padding-left: 14px;
-    width: 100%;
-    position: static;
   }
 
-  .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item {
+  header .dropdown-group > a {
     font-size: 13px;
     line-height: 50px;
-    padding: 0 20px;
+    padding: 0 5%;
     width: 100%;
-    height: 50px;
   }
 
-  .navbar-nav > .nav-item > .dropdown-menu > .dropdown-item:hover {
+  header .dropdown-group > a:hover {
     background-color: #000;
     transition: 0s;
   }
 }
 
 @media (max-width: 767px) {
-  .navbar {
+  .header-inner {
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    padding-left: 0;
+  }
+  header .navbar-brand > img {
+    width: 110px;
+    height: auto;
+  }
+
+  header .global-nav > .menu .nav-link {
+    padding: 0 20px;
+  }
+
+  header .dropdown-group > a {
     padding: 0 20px;
   }
 }
