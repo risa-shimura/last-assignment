@@ -129,10 +129,6 @@ header .dropdown-group > a:hover {
     background-color: #000;
   }
 
-  header .menu {
-    width: 100%;
-  }
-
   header .global-nav > .menu .nav-link {
     padding: 0 5%;
     font-size: 13px;
