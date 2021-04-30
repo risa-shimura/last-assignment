@@ -21,6 +21,8 @@ header {
   max-width: 1180px;
   margin-right: auto;
   margin-left: auto;
+  width: 92%;
+  height: 90px;
 }
 
 .header-logo > a {
@@ -115,6 +117,8 @@ header .dropdown-group > a:hover {
   .header-inner {
     height: 100%;
     padding-left: 5%;
+    width: 100%;
+    max-width: none;
   }
 
   header .global-nav {
@@ -123,6 +127,10 @@ header .dropdown-group > a:hover {
     width: 100%;
     left: 0;
     background-color: #000;
+  }
+
+  header .menu {
+    width: 100%;
   }
 
   header .global-nav > .menu .nav-link {
