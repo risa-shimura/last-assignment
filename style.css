@@ -8,11 +8,12 @@ body {
 /* <-------- common */
 
 /* --------> header */
-header {
+.header-nav {
   position: absolute;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
 }
 
 .header-inner {
@@ -77,13 +78,13 @@ header .global-nav {
   line-height: 90px;
 }
 
-header .global-nav > .menu .nav-link {
+header .global-nav > .navbar-nav .nav-link {
   color: #fff;
   padding: 0 21px;
   transition: 0.3s;
 }
 
-header .menu .nav-link:hover {
+header .navbar-nav .nav-link:hover {
   color: #999;
 }
 
@@ -109,9 +110,10 @@ header .dropdown-group > a:hover {
 }
 
 @media (max-width: 1199px) {
-  header {
+  .header-nav {
     background-color: #000;
     height: 60px;
+    position: static;
   }
 
   .header-inner {
@@ -127,16 +129,17 @@ header .dropdown-group > a:hover {
     width: 100%;
     left: 0;
     background-color: #000;
+    z-index: 99;
   }
 
-  header .global-nav > .menu .nav-link {
+  header .global-nav > .navbar-nav .nav-link {
     padding: 0 5%;
     font-size: 13px;
     line-height: 50px;
     transition: 0s;
   }
 
-  header .menu .nav-link:hover {
+  header .navbar-nav .nav-link:hover {
     color: #fff;
   }
 
@@ -171,7 +174,7 @@ header .dropdown-group > a:hover {
     height: auto;
   }
 
-  header .global-nav > .menu .nav-link {
+  header .global-nav > .navbar-nav .nav-link {
     padding: 0 20px;
   }
 
