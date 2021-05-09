@@ -1,13 +1,187 @@
 /* --------> common */
-.クラス名 {
+body {
+  font-family: "Segoe UI", Verdana, "游ゴシック", YuGothic,
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #000;
+  line-height: 1;
 }
-
-.クラス名２ {
-}
-
 /* <-------- common */
 
 /* --------> header */
+.header-nav {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.header-inner {
+  padding: 0;
+  justify-content: space-between;
+  max-width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 92%;
+  height: 90px;
+}
+
+.header-logo > a {
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+header .navbar-brand > img {
+  width: 143px;
+  height: 24px;
+}
+
+header .hamburger-menu {
+  padding: 1px 6px;
+  border: 0;
+  outline: 0;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  right: 0;
+}
+
+header .hamburger-menu:focus {
+  outline: none;
+}
+
+header > nav > button span {
+  position: absolute;
+  left: 23px;
+  width: 16px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+header > nav > button span:nth-of-type(1) {
+  top: 22px;
+}
+
+header > nav > button span:nth-of-type(2) {
+  top: 27px;
+}
+
+header > nav > button span:nth-of-type(3) {
+  bottom: 25px;
+}
+
+header .global-nav {
+  flex-grow: 0;
+  font-size: 14px;
+  line-height: 90px;
+}
+
+header .global-nav > .navbar-nav .nav-link {
+  color: #fff;
+  padding: 0 21px;
+  transition: 0.3s;
+}
+
+header .navbar-nav .nav-link:hover {
+  color: #999;
+}
+
+header .dropdown-group {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+header .dropdown-group > a {
+  color: #fff;
+  background-color: #000;
+  font-size: 14px;
+  width: 220px;
+  padding: 17px 18px;
+  transition: 0.5s;
+}
+
+header .dropdown-group > a:hover {
+  background-color: #442602;
+  color: #fff;
+}
+
+@media (max-width: 1199px) {
+  .header-nav {
+    background-color: #000;
+    height: 60px;
+    position: static;
+  }
+
+  .header-inner {
+    height: 100%;
+    padding-left: 5%;
+    width: 100%;
+    max-width: none;
+  }
+
+  header .global-nav {
+    position: absolute;
+    top: 60px;
+    width: 100%;
+    left: 0;
+    background-color: #000;
+    z-index: 99;
+  }
+
+  header .global-nav > .navbar-nav .nav-link {
+    padding: 0 5%;
+    font-size: 13px;
+    line-height: 50px;
+    transition: 0;
+  }
+
+  header .navbar-nav .nav-link:hover {
+    color: #fff;
+  }
+
+  header .dropdown-group {
+    background-color: #000;
+    padding-left: 14px;
+  }
+
+  header .dropdown-group > a {
+    font-size: 13px;
+    line-height: 50px;
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  header .dropdown-group > a:hover {
+    background-color: #000;
+    transition: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .header-inner {
+    padding: 0 20px;
+  }
+
+  .header-logo {
+    padding-left: 0;
+  }
+  header .navbar-brand > img {
+    width: 110px;
+    height: auto;
+  }
+
+  header .global-nav > .navbar-nav .nav-link {
+    padding: 0 20px;
+  }
+
+  header .dropdown-group > a {
+    padding: 0 20px;
+  }
+}
 
 /* <-------- header */
 
