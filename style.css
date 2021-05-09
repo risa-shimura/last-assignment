@@ -136,7 +136,7 @@ header .dropdown-group > a:hover {
     padding: 0 5%;
     font-size: 13px;
     line-height: 50px;
-    transition: 0s;
+    transition: 0;
   }
 
   header .navbar-nav .nav-link:hover {
@@ -157,7 +157,7 @@ header .dropdown-group > a:hover {
 
   header .dropdown-group > a:hover {
     background-color: #000;
-    transition: 0s;
+    transition: 0;
   }
 }
 
