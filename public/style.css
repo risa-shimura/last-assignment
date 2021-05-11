@@ -5,6 +5,14 @@ body {
   color: #000;
   line-height: 1;
 }
+
+main .top-title,
+main .index01-title {
+  font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
+    "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
+    "ＭＳ Ｐ明朝", "MS PMincho", serif;
+  font-weight: 700;
+}
 /* <-------- common */
 
 /* --------> header */
@@ -182,11 +190,104 @@ header .dropdown-group > a:hover {
     padding: 0 20px;
   }
 }
-
 /* <-------- header */
 
 /* --------> main */
+main .top-area {
+  background-image: url(./images/top-image.jpg);
+  position: relative;
+  padding-bottom: 56%;
+  background-position: center;
+  background-size: cover;
+}
 
+main .top-header {
+  background: rgba(33, 15, 7, 0.3);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+main .top-inner {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  padding: 0 20px;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+main .top-title {
+  color: #fff;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+main .top-title span {
+  text-align: left;
+  writing-mode: vertical-rl;
+}
+
+main .index01 {
+  background: #000;
+  color: #fff;
+  padding: 51px 0 79px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main .index01-inner {
+  width: 92%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+main .index01-title {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+main .index01-contents {
+  font-size: 14px;
+  line-height: 2.6;
+  margin-bottom: 0;
+}
+
+@media (max-width: 991px) {
+  main .index01-inner {
+    width: 89%;
+  }
+}
+
+@media (max-width: 767px) {
+  main .top-area {
+    height: 360px;
+    padding-bottom: 0;
+  }
+
+  main .top-title {
+    font-size: 20px;
+  }
+
+  main .index01 {
+    margin-bottom: 40px;
+    padding: 32px 0 33px;
+  }
+
+  main .index01-inner {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  main .index01-title {
+    font-size: 20px;
+  }
+
+  main .index01-contents {
+    line-height: 2;
+  }
+}
 /* <-------- main */
 
 /* --------> footer */
