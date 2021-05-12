@@ -193,7 +193,7 @@ header .dropdown-group > a:hover {
 /* <-------- header */
 
 /* --------> main */
-main .top-area {
+#top-area .top-header {
   background-image: url(./images/top-image.jpg);
   position: relative;
   padding-bottom: 56%;
@@ -201,34 +201,33 @@ main .top-area {
   background-size: cover;
 }
 
-main .top-header {
+#top-area .top-header::before {
   background: rgba(33, 15, 7, 0.3);
   position: absolute;
   width: 100%;
   height: 100%;
+  content: "";
 }
 
-main .top-inner {
+#top-area .top-title {
   position: absolute;
-  top: 50%;
   width: 100%;
+  height: 100%;
   padding: 0 20px;
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-main .top-title {
   color: #fff;
   font-size: 36px;
   line-height: 1.3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-main .top-title span {
+#top-area .image-desc {
   text-align: left;
   writing-mode: vertical-rl;
 }
 
-main .index01 {
+#top-area .index01 {
   background: #000;
   color: #fff;
   padding: 51px 0 79px;
@@ -236,55 +235,55 @@ main .index01 {
   margin-bottom: 30px;
 }
 
-main .index01-inner {
+#top-area .index01-inner {
   width: 92%;
   margin-right: auto;
   margin-left: auto;
 }
 
-main .index01-title {
+#top-area .index01-title {
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-main .index01-contents {
+#top-area .index01-contents {
   font-size: 14px;
   line-height: 2.6;
   margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  main .index01-inner {
+  #top-area .index01-inner {
     width: 89%;
   }
 }
 
 @media (max-width: 767px) {
-  main .top-area {
+  #top-area .top-header {
     height: 360px;
     padding-bottom: 0;
   }
 
-  main .top-title {
+  #top-area .top-title {
     font-size: 20px;
   }
 
-  main .index01 {
+  #top-area .index01 {
     margin-bottom: 40px;
     padding: 32px 0 33px;
   }
 
-  main .index01-inner {
+  #top-area .index01-inner {
     width: 100%;
     padding: 0 20px;
   }
 
-  main .index01-title {
+  #top-area .index01-title {
     font-size: 20px;
   }
 
-  main .index01-contents {
+  #top-area .index01-contents {
     line-height: 2;
   }
 }
