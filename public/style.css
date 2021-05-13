@@ -7,7 +7,7 @@ body {
 }
 
 #top-area .top-title,
-#top-area .headding-title {
+#top-area .heading-title {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -227,7 +227,7 @@ header .dropdown-group > a:hover {
   writing-mode: vertical-rl;
 }
 
-#top-area .headding {
+#top-area .heading {
   background: #000;
   color: #fff;
   padding: 51px 0 79px;
@@ -235,24 +235,24 @@ header .dropdown-group > a:hover {
   margin-bottom: 30px;
 }
 
-#top-area .headding-lead {
+#top-area .heading-lead {
   padding: 0 40px;
 }
 
-#top-area .headding-title {
+#top-area .heading-title {
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-#top-area .headding-contents {
+#top-area .heading-contents {
   font-size: 14px;
   line-height: 2.6;
   margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  #top-area .headding-lead {
+  #top-area .heading-lead {
     padding: 0 50px;
   }
 }
@@ -267,21 +267,21 @@ header .dropdown-group > a:hover {
     font-size: 20px;
   }
 
-  #top-area .headding {
+  #top-area .heading {
     margin-bottom: 40px;
     padding: 32px 0 33px;
   }
 
-  #top-area .headding-lead {
+  #top-area .heading-lead {
     width: 100%;
     padding: 0 20px;
   }
 
-  #top-area .hedding-title {
+  #top-area .heading-title {
     font-size: 20px;
   }
 
-  #top-area .headding-contents {
+  #top-area .heading-contents {
     line-height: 2;
   }
 }
