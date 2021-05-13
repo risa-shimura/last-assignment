@@ -6,8 +6,8 @@ body {
   line-height: 1;
 }
 
-main .top-title,
-main .index01-title {
+#top-area .top-title,
+#top-area .hedding-title {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
