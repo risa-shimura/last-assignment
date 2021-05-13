@@ -222,12 +222,12 @@ header .dropdown-group > a:hover {
   align-items: center;
 }
 
-#top-area .image-desc {
+#top-area .top-img {
   text-align: left;
   writing-mode: vertical-rl;
 }
 
-#top-area .index01 {
+#top-area .headding {
   background: #000;
   color: #fff;
   padding: 51px 0 79px;
@@ -235,27 +235,25 @@ header .dropdown-group > a:hover {
   margin-bottom: 30px;
 }
 
-#top-area .index01-inner {
-  width: 92%;
-  margin-right: auto;
-  margin-left: auto;
+#top-area .headding-lead {
+  padding: 0 40px;
 }
 
-#top-area .index01-title {
+#top-area .headding-title {
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
 
-#top-area .index01-contents {
+#top-area .headding-contents {
   font-size: 14px;
   line-height: 2.6;
   margin-bottom: 0;
 }
 
 @media (max-width: 991px) {
-  #top-area .index01-inner {
-    width: 89%;
+  #top-area .headding-lead {
+    padding: 0 50px;
   }
 }
 
@@ -269,21 +267,21 @@ header .dropdown-group > a:hover {
     font-size: 20px;
   }
 
-  #top-area .index01 {
+  #top-area .headding {
     margin-bottom: 40px;
     padding: 32px 0 33px;
   }
 
-  #top-area .index01-inner {
+  #top-area .headding-lead {
     width: 100%;
     padding: 0 20px;
   }
 
-  #top-area .index01-title {
+  #top-area .hedding-title {
     font-size: 20px;
   }
 
-  #top-area .index01-contents {
+  #top-area .headding-contents {
     line-height: 2;
   }
 }
