@@ -337,6 +337,116 @@ header .dropdown-group > a:hover {
     line-height: 2;
   }
 }
+
+#card-area .card-space {
+  padding: 0 40px;
+  max-width: 1180px;
+  margin-bottom: 100px;
+}
+
+#card-area .card-parts {
+  border: none;
+}
+
+#card-area .card-parts > p {
+  color: #442602;
+  z-index: 1;
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+#card-area .card-parts > p::before {
+  z-index: -1;
+  position: absolute;
+  top: -1px;
+  border-width: 75px;
+  border-style: solid;
+  border-color: #fff transparent transparent #fff;
+  content: "";
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+#card-area .card-content {
+  background: #f5f5f5;
+  padding: 30px;
+}
+
+#card-area .card-text {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 2.4;
+}
+
+#card-area .card-btn {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#card-area .card-btn > a {
+  background: #000;
+  min-width: 200px;
+  height: 55px;
+  padding: 0 15px;
+  border-radius: 0;
+  font-size: 14px;
+  line-height: 55px;
+  transition-duration: 0.2s;
+  color: #fff;
+  transition-property: background-color, color;
+}
+
+#card-area .card-btn > a:hover {
+  background-color: #442602;
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  #card-area .card-btn > a {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  #card-area .card-space {
+    margin-bottom: 40px;
+    width: 100%;
+    padding: 0 20px;
+  }
+  #card-area .card-parts {
+    margin-bottom: 24px;
+  }
+
+  #card-area .card-content {
+    padding: 25px;
+  }
+
+  #card-area .card-text {
+    margin-bottom: 18px;
+    line-height: 2;
+  }
+
+  #card-area .card-btn > a {
+    min-width: 180px;
+    height: 45px;
+    font-size: 12px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 550px) {
+  #card-area .card-parts > p {
+    width: 145px;
+    height: 145px;
+  }
+
+  #card-area .card-parts > p::before {
+    border-width: 70px;
+  }
+}
 /* <-------- main */
 
 /* --------> footer */
