@@ -352,9 +352,6 @@ header .dropdown-group > a:hover {
   color: #442602;
   z-index: 1;
   position: absolute;
-  width: 160px;
-  height: 160px;
-  overflow: hidden;
   font-size: 20px;
   font-weight: 700;
   margin: 0;
@@ -368,7 +365,6 @@ header .dropdown-group > a:hover {
   border-style: solid;
   border-color: #fff transparent transparent #fff;
   content: "";
-  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
 }
 
 #card-area .card-content {
