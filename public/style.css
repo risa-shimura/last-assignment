@@ -348,7 +348,7 @@ header .dropdown-group > a:hover {
   border: none;
 }
 
-#card-area .card-parts > p {
+#card-area .card-title {
   color: #442602;
   z-index: 1;
   position: absolute;
@@ -357,7 +357,7 @@ header .dropdown-group > a:hover {
   margin: 0;
 }
 
-#card-area .card-parts > p::before {
+#card-area .card-title::before {
   z-index: -1;
   position: absolute;
   top: -1px;
@@ -365,6 +365,19 @@ header .dropdown-group > a:hover {
   border-style: solid;
   border-color: #fff transparent transparent #fff;
   content: "";
+}
+
+#card-area .card-image {
+  overflow: hidden;
+}
+
+#card-area .card-image > img {
+  width: 100%;
+  transition-duration: 0.5s;
+}
+
+#card-area .card-image:hover img {
+  transform: scale(1.2);
 }
 
 #card-area .card-content {
@@ -393,11 +406,14 @@ header .dropdown-group > a:hover {
   line-height: 55px;
   transition-duration: 0.2s;
   color: #fff;
-  transition-property: background-color, color;
 }
 
 #card-area .card-btn > a:hover {
   background-color: #442602;
+}
+
+#card-area .card-btn > a:focus {
+  box-shadow: none;
 }
 
 @media (min-width: 768px) and (max-width: 1119px) {
@@ -409,9 +425,9 @@ header .dropdown-group > a:hover {
 @media (max-width: 767px) {
   #card-area .card-space {
     margin-bottom: 40px;
-    width: 100%;
     padding: 0 20px;
   }
+
   #card-area .card-parts {
     margin-bottom: 24px;
   }
@@ -434,12 +450,7 @@ header .dropdown-group > a:hover {
 }
 
 @media (max-width: 550px) {
-  #card-area .card-parts > p {
-    width: 145px;
-    height: 145px;
-  }
-
-  #card-area .card-parts > p::before {
+  #card-area .card-title::before {
     border-width: 70px;
   }
 }
