@@ -252,41 +252,6 @@ header .dropdown-group > a:hover {
   margin-bottom: 0;
 }
 
-@media (max-width: 991px) {
-  #top-area .heading-lead {
-    padding: 0 50px;
-  }
-}
-
-@media (max-width: 767px) {
-  #top-area .top-header {
-    height: 360px;
-    padding-bottom: 0;
-  }
-
-  #top-area .top-title {
-    font-size: 20px;
-  }
-
-  #top-area .heading {
-    margin-bottom: 40px;
-    padding: 32px 0 33px;
-  }
-
-  #top-area .heading-lead {
-    width: 100%;
-    padding: 0 20px;
-  }
-
-  #top-area .heading-title {
-    font-size: 20px;
-  }
-
-  #top-area .heading-contents {
-    line-height: 2;
-  }
-}
-
 #summary-area .summary {
   padding: 100px 40px;
   max-width: 1180px;
@@ -319,25 +284,6 @@ header .dropdown-group > a:hover {
   margin-bottom: 0;
 }
 
-@media (max-width: 767px) {
-  #summary-area .summary {
-    margin-bottom: 40px;
-    padding: 0 20px;
-  }
-
-  #summary-area .summary-lead {
-    padding: 35px 25px;
-  }
-
-  #summary-area .summary-title {
-    font-size: 20px;
-  }
-
-  #summary-area .summary-desc {
-    line-height: 2;
-  }
-}
-
 #card-area .card-space {
   padding: 0 40px;
   max-width: 1180px;
@@ -346,6 +292,7 @@ header .dropdown-group > a:hover {
 
 #card-area .card-parts {
   border: none;
+  overflow: hidden;
 }
 
 #card-area .card-title {
@@ -354,15 +301,18 @@ header .dropdown-group > a:hover {
   position: absolute;
   font-weight: 700;
   margin: 0;
+  padding-left: 2px;
 }
 
 #card-area .card-title::before {
   z-index: -1;
   position: absolute;
   top: -1px;
+  left: 0;
   border-width: 75px;
   border-style: solid;
   border-color: #fff transparent transparent #fff;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
   content: "";
 }
 
@@ -411,13 +361,63 @@ header .dropdown-group > a:hover {
   box-shadow: 0 0 0 1px #442602;
 }
 
-@media (min-width: 768px) and (max-width: 1119px) {
+@media (max-width: 1119px) {
   #card-area .card-btn > a {
     min-width: 150px;
   }
 }
 
+@media (max-width: 991px) {
+  #top-area .heading-lead {
+    padding: 0 50px;
+  }
+}
+
 @media (max-width: 767px) {
+  #top-area .top-header {
+    height: 360px;
+    padding-bottom: 0;
+  }
+
+  #top-area .top-title {
+    font-size: 20px;
+  }
+
+  #top-area .heading {
+    margin-bottom: 40px;
+    padding: 32px 0 33px;
+  }
+
+  #top-area .heading-lead {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  #top-area .heading-title {
+    font-size: 20px;
+  }
+
+  #top-area .heading-contents {
+    line-height: 2;
+  }
+
+  #summary-area .summary {
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+
+  #summary-area .summary-lead {
+    padding: 35px 25px;
+  }
+
+  #summary-area .summary-title {
+    font-size: 20px;
+  }
+
+  #summary-area .summary-desc {
+    line-height: 2;
+  }
+
   #card-area .card-space {
     margin-bottom: 40px;
     padding: 0 20px;
@@ -445,6 +445,10 @@ header .dropdown-group > a:hover {
 }
 
 @media (max-width: 550px) {
+  #card-area .card-title {
+    padding-left: 3px;
+  }
+
   #card-area .card-title::before {
     border-width: 70px;
   }
