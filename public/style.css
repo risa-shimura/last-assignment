@@ -253,8 +253,8 @@ header .dropdown-group > a:hover {
 }
 
 #summary-area .summary {
-  padding: 100px 40px;
-  max-width: 1180px;
+  padding-top: 100px;
+  margin-bottom: 100px;
 }
 
 #summary-area .summary-img {
@@ -285,14 +285,13 @@ header .dropdown-group > a:hover {
 }
 
 #card-area .card-space {
-  padding: 0 40px;
-  max-width: 1180px;
   margin-bottom: 100px;
 }
 
 #card-area .card-parts {
   border: none;
   overflow: hidden;
+  border-radius: 0;
 }
 
 #card-area .card-title {
@@ -441,16 +440,6 @@ header .dropdown-group > a:hover {
     height: 45px;
     font-size: 12px;
     line-height: 45px;
-  }
-}
-
-@media (max-width: 550px) {
-  #card-area .card-title {
-    padding-left: 3px;
-  }
-
-  #card-area .card-title::before {
-    border-width: 70px;
   }
 }
 /* <-------- main */
