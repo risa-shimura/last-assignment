@@ -13,7 +13,7 @@ body {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
-  font-weight: 700;
+  font-weight: 500;
 }
 /* <-------- common */
 
@@ -438,6 +438,7 @@ header .dropdown-group > a:hover {
 #info-area .info-img {
   width: 207px;
   margin: -1px;
+  overflow: hidden;
 }
 
 #info-area .info-img > img {
@@ -445,7 +446,7 @@ header .dropdown-group > a:hover {
   transition-duration: 0.5s;
 }
 
-#info-area .info-img > article > a:hover img {
+#info-area .event-content > article > a:hover img {
   transform: scale(1.2);
 }
 
