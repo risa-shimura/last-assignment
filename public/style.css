@@ -371,8 +371,7 @@ header .dropdown-group > a:hover {
 }
 
 #info-area .info {
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
 }
 
 #info-area .info-title {
@@ -444,6 +443,7 @@ header .dropdown-group > a:hover {
 #info-area .info-img > img {
   width: 100%;
   transition-duration: 0.5s;
+  transform: scale(1)
 }
 
 #info-area .event-content > article > a:hover img {
@@ -477,13 +477,13 @@ header .dropdown-group > a:hover {
 }
 
 #info-area .info-btn > a {
-  color: #000000;
+  color: #000;
   transition-duration: 0.2s;
   text-decoration: none;
 }
 
 #info-area .info-btn > a:hover {
-  color: #999999;
+  color: #999;
 }
 
 #info-area .info-btn > a::after {
@@ -580,7 +580,7 @@ header .dropdown-group > a:hover {
 
   #info-area .info-space {
     margin-bottom: 35px;
-    padding: 37px 0 5px;
+    padding: 37px 0 0;
   }
 
   #info-area .info-title {
