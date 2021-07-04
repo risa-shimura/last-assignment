@@ -20,7 +20,6 @@ body {
 /* --------> header */
 .header-nav {
   position: absolute;
-  left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
@@ -30,8 +29,7 @@ body {
   padding: 0;
   justify-content: space-between;
   max-width: 1180px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 0 auto;
   width: 92%;
   height: 90px;
 }
@@ -204,7 +202,7 @@ header .dropdown-group > a:hover {
 }
 
 #top-area .top-header::before {
-  background: rgba(33, 15, 7, 0.3);
+  background-color: rgba(33, 15, 7, 0.3);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -230,7 +228,7 @@ header .dropdown-group > a:hover {
 }
 
 #top-area .heading {
-  background: #000;
+  background-color: #000;
   color: #fff;
   padding: 51px 0 79px;
   text-align: center;
@@ -267,7 +265,7 @@ header .dropdown-group > a:hover {
 }
 
 #summary-area .summary-lead {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   padding: 50px 20px;
   text-align: center;
 }
@@ -325,7 +323,7 @@ header .dropdown-group > a:hover {
 }
 
 #card-area .card-content {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
   padding: 30px;
 }
 
@@ -341,7 +339,7 @@ header .dropdown-group > a:hover {
 }
 
 #card-area .card-btn > a {
-  background: #000;
+  background-color: #000;
   min-width: 200px;
   height: 55px;
   padding: 0 15px;
@@ -362,7 +360,7 @@ header .dropdown-group > a:hover {
 }
 
 #info-area {
-  background: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 #info-area .info-space {
@@ -397,7 +395,7 @@ header .dropdown-group > a:hover {
   margin-top: -1px;
   padding: 20px;
   border: 1px solid #ddd;
-  background: #fff;
+  background-color: #fff;
 }
 
 #info-area .info-content > article > a {
@@ -427,7 +425,7 @@ header .dropdown-group > a:hover {
 #info-area .event-content > article {
   margin-top: -1px;
   border: 1px solid #ddd;
-  background: #fff;
+  background-color: #fff;
 }
 
 #info-area .event-content > article > a {
@@ -456,7 +454,7 @@ header .dropdown-group > a:hover {
   flex-direction: column;
   justify-content: center;
   padding: 0 30px;
-  background: #fff;
+  background-color: #fff;
 }
 
 #info-area .info-img-content > h3 {
@@ -520,11 +518,10 @@ header .dropdown-group > a:hover {
 
   #top-area .heading {
     margin-bottom: 40px;
-    padding: 32px 0 33px;
+    padding: 33px 0;
   }
 
   #top-area .heading-lead {
-    width: 100%;
     padding: 0 20px;
   }
 
