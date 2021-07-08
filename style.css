@@ -542,6 +542,7 @@ header .dropdown-group > a:hover {
 
 #plan-area .list-item {
   margin: 0;
+  text-align: center;
 }
 
 #plan-area .list-item > dt {
@@ -549,16 +550,17 @@ header .dropdown-group > a:hover {
   color: #fff;
   font-size: 20px;
   line-height: 60px;
-  text-align: center;
+}
+
+#plan-area .list-item > dd {
+  border: 1px solid #ddd;
+  border-top: 0;
+  margin: 0;
 }
 
 #plan-area .deta-price {
   background-color: #ece9e6;
   padding: 24px 0;
-  border: 1px solid #ddd;
-  border-top: 0;
-  text-align: center;
-  margin: 0;
 }
 
 #plan-area .price {
@@ -579,11 +581,7 @@ header .dropdown-group > a:hover {
 
 #plan-area .plan-table {
   padding: 20px 10px;
-  border: 1px solid #ddd;
-  border-top: 0;
   line-height: 1.4;
-  text-align: center;
-  margin: 0;
 }
 
 #plan-area .list-item:nth-child(2) {
