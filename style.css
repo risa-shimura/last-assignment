@@ -74,7 +74,7 @@ a:hover {
 
   #card-area .card-space,
   #info-area .news-event,
-  #plan-area .plan {
+  .plan {
     padding: 0 20px;
   }
 
@@ -585,12 +585,12 @@ header .dropdown-group > a:hover {
 }
 
 #plan-area .list-item:nth-child(2) {
-  outline: 5px solid #442607;
-  outline-offset: -20px;
+  border: 5px solid #442607;
+  padding: 0;
 }
 
 #plan-area .list-item:nth-child(2) > dt {
-  height: 59px;
+  height: 55px;
   background-color: #442607;
   line-height: 55px;
 }
@@ -600,13 +600,12 @@ header .dropdown-group > a:hover {
 }
 
 #plan-area .list-item:nth-child(2) > .plan-table:last-child {
-  margin-bottom: 19px;
   border-bottom: none;
+  padding: 18px 10px;
 }
 
 #plan-area .plan-btn > a {
   display: inline-block;
-  transition-timing-function: ease;
 }
 
 @media (max-width: 991px) {
@@ -726,10 +725,12 @@ header .dropdown-group > a:hover {
 
   #plan-area .plan-list {
     margin-bottom: 0;
+    padding: 0 15px;
   }
 
   #plan-area .list-item {
     margin-bottom: 24px;
+    padding: 0;
   }
 
   #plan-area .list-item > dt {
@@ -750,17 +751,13 @@ header .dropdown-group > a:hover {
     padding: 12px;
   }
 
-  #plan-area .list-item:nth-child(2) {
-    margin-bottom: 7px;
-  }
-
-  #plan-area .list-item > dt:nth-child(2) {
+  #plan-area .list-item:nth-child(2) > dt {
     height: 40px;
     line-height: 35px;
   }
 
   #plan-area .list-item:nth-child(2) > .plan-table:last-child {
-    padding-bottom: 33px;
+    padding: 12px 10px;
     margin-bottom: 0;
   }
 }
