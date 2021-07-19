@@ -94,7 +94,7 @@ a:hover {
   header .header-inner,
   #card-area .card-space,
   #info-area .news-event,
-  .plan {
+  #plan-area .plan {
     padding: 0 20px;
   }
 
@@ -131,6 +131,7 @@ a:hover {
   max-width: 1180px;
   width: 92%;
   height: 90px;
+  padding: 0;
 }
 
 .header-logo > a {
@@ -497,6 +498,10 @@ header .dropdown-group > a:hover {
 
 #info-area .info-btn {
   text-align: right;
+}
+
+#info-area .info-btn > a {
+  transition-duration: 0.2s;
 }
 
 #info-area .info-btn > a:hover {
