@@ -4,16 +4,117 @@ body {
     "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   color: #000;
   line-height: 1;
+  font-size: 14px;
+}
+
+a,
+a:hover {
+  color: #000;
+  text-decoration: none;
 }
 
 #top-area .top-title,
 #top-area .heading-title,
 #summary-area .summary-title,
-#info-area .info-title > h2 {
+#info-area .info-title > h2,
+#plan-area .plan > h2 {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
   font-weight: 500;
+}
+
+#top-area .heading-title,
+#summary-area .summary-title,
+#plan-area .plan > h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+#top-area .heading-contents,
+#summary-area .summary-desc {
+  line-height: 2.6;
+}
+
+#card-area .card-btn > a,
+#plan-area .plan-btn > a {
+  background-color: #000;
+  color: #fff;
+  line-height: 55px;
+  transition-duration: 0.2s;
+  min-width: 200px;
+}
+
+#card-area .card-btn > a:hover,
+#plan-area .plan-btn > a:hover {
+  background-color: #442602;
+}
+
+#summary-area .summary,
+#card-area .card-space,
+#info-area .info-space,
+#plan-area .plan {
+  margin-bottom: 100px;
+}
+
+#summary-area .summary-img > img,
+#info-area .info-title > h2,
+#info-area .info-content article > a > h3,
+#plan-area .price-per {
+  margin: 0;
+  padding: 0;
+}
+
+#card-area .card-title,
+#plan-area .price {
+  color: #442506;
+  font-weight: 700;
+}
+
+#summary-area .summary-title,
+#plan-area .plan > h2 {
+  color: #442506;
+  text-align: center;
+}
+
+@media (max-width: 1119px) {
+  #card-area .card-btn > a,
+  #plan-area .plan-btn > a {
+    min-width: 150px;
+  }
+}
+
+@media (max-width: 767px) {
+  #card-area .card-space,
+  #plan-area .plan {
+    margin-bottom: 40px;
+  }
+
+  header .header-inner,
+  #card-area .card-space,
+  #info-area .news-event,
+  #plan-area .plan {
+    padding: 0 20px;
+  }
+
+  #top-area .heading-title,
+  #summary-area .summary-title,
+  #plan-area .plan > h2 {
+    font-size: 20px;
+  }
+
+  #top-area .heading-contents,
+  #summary-area .summary-desc {
+    line-height: 2;
+  }
+
+  #card-area .card-btn > a,
+  #plan-area .plan-btn > a {
+    min-width: 180px;
+    font-size: 12px;
+    line-height: 45px;
+  }
 }
 /* <-------- common */
 
@@ -26,17 +127,14 @@ body {
 }
 
 .header-inner {
-  padding: 0;
   justify-content: space-between;
   max-width: 1180px;
-  margin: 0 auto;
   width: 92%;
   height: 90px;
+  padding: 0;
 }
 
 .header-logo > a {
-  padding: 0;
-  margin: 0;
   display: flex;
 }
 
@@ -82,7 +180,6 @@ header > nav > button span:nth-of-type(3) {
 
 header .global-nav {
   flex-grow: 0;
-  font-size: 14px;
   line-height: 90px;
 }
 
@@ -97,18 +194,15 @@ header .navbar-nav .nav-link:hover {
 }
 
 header .dropdown-group {
-  padding: 0;
   border: 0;
-  margin: 0;
   line-height: 1.2;
 }
 
 header .dropdown-group > a {
   color: #fff;
   background-color: #000;
-  font-size: 14px;
   width: 220px;
-  padding: 17px 18px;
+  padding: 18px;
   transition: 0.5s;
 }
 
@@ -170,13 +264,10 @@ header .dropdown-group > a:hover {
 }
 
 @media (max-width: 767px) {
-  .header-inner {
-    padding: 0 20px;
-  }
-
   .header-logo {
     padding-left: 0;
   }
+
   header .navbar-brand > img {
     width: 110px;
     height: auto;
@@ -223,7 +314,6 @@ header .dropdown-group > a:hover {
 }
 
 #top-area .top-img {
-  text-align: left;
   writing-mode: vertical-rl;
 }
 
@@ -231,60 +321,22 @@ header .dropdown-group > a:hover {
   background-color: #000;
   color: #fff;
   padding: 51px 0 79px;
-  text-align: center;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 #top-area .heading-lead {
   padding: 0 40px;
 }
 
-#top-area .heading-title {
-  font-size: 36px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-#top-area .heading-contents {
-  font-size: 14px;
-  line-height: 2.6;
-  margin-bottom: 0;
-}
-
 #summary-area .summary {
   padding-top: 100px;
-  margin-bottom: 100px;
-}
-
-#summary-area .summary-img {
-  margin: 0;
-}
-
-#summary-area .summary-img > img {
-  padding: 0;
 }
 
 #summary-area .summary-lead {
   background-color: #f5f5f5;
   padding: 50px 20px;
   text-align: center;
-}
-
-#summary-area .summary-title {
-  color: #442606;
-  font-size: 36px;
-  margin-bottom: 10px;
-  line-height: 1.5;
-}
-
-#summary-area .summary-desc {
-  font-size: 14px;
-  line-height: 2.6;
-  margin-bottom: 0;
-}
-
-#card-area .card-space {
-  margin-bottom: 100px;
 }
 
 #card-area .card-parts {
@@ -294,12 +346,10 @@ header .dropdown-group > a:hover {
 }
 
 #card-area .card-title {
-  color: #442602;
   z-index: 1;
   position: absolute;
-  font-weight: 700;
-  margin: 0;
   padding-left: 2px;
+  margin: 0;
 }
 
 #card-area .card-title::before {
@@ -329,30 +379,17 @@ header .dropdown-group > a:hover {
 
 #card-area .card-text {
   margin-bottom: 30px;
-  font-size: 14px;
   line-height: 2.4;
 }
 
 #card-area .card-btn {
   text-align: center;
-  margin-bottom: 0;
 }
 
 #card-area .card-btn > a {
-  background-color: #000;
-  min-width: 200px;
-  height: 55px;
   padding: 0 15px;
   border-radius: 0;
-  font-size: 14px;
-  line-height: 55px;
-  transition-duration: 0.2s;
-  color: #fff;
   border: none;
-}
-
-#card-area .card-btn > a:hover {
-  background-color: #442602;
 }
 
 #card-area .card-btn > a:focus {
@@ -365,11 +402,6 @@ header .dropdown-group > a:hover {
 
 #info-area .info-space {
   padding: 57px 0;
-  margin-bottom: 100px;
-}
-
-#info-area .info {
-  margin: 0 auto;
 }
 
 #info-area .info-title {
@@ -380,7 +412,6 @@ header .dropdown-group > a:hover {
 
 #info-area .info-title > h2 {
   font-size: 45px;
-  margin-bottom: 0;
 }
 
 #info-area .info-title > span {
@@ -400,9 +431,6 @@ header .dropdown-group > a:hover {
 
 #info-area .info-content > article > a {
   transition-duration: 0.2s;
-  transition-timing-function: ease;
-  color: #000;
-  text-decoration: none;
 }
 
 #info-area .info-content > article > a > time {
@@ -413,7 +441,6 @@ header .dropdown-group > a:hover {
 }
 
 #info-area .info-content article > a > h3 {
-  margin-bottom: 0;
   overflow: hidden;
   font-size: 16px;
   font-weight: 400;
@@ -441,7 +468,7 @@ header .dropdown-group > a:hover {
 #info-area .info-img > img {
   width: 100%;
   transition-duration: 0.5s;
-  transform: scale(1)
+  transform: scale(1);
 }
 
 #info-area .event-content > article > a:hover img {
@@ -470,14 +497,11 @@ header .dropdown-group > a:hover {
 }
 
 #info-area .info-btn {
-  font-size: 14px;
   text-align: right;
 }
 
 #info-area .info-btn > a {
-  color: #000;
   transition-duration: 0.2s;
-  text-decoration: none;
 }
 
 #info-area .info-btn > a:hover {
@@ -490,10 +514,71 @@ header .dropdown-group > a:hover {
   content: ">";
 }
 
-@media (max-width: 1119px) {
-  #card-area .card-btn > a {
-    min-width: 150px;
-  }
+#plan-area .plan > p {
+  margin-bottom: 50px;
+  line-height: 2.4;
+  text-align: center;
+}
+
+#plan-area .plan-list {
+  margin-bottom: 40px;
+}
+
+#plan-area .list-item {
+  margin: 0;
+  text-align: center;
+}
+
+#plan-area .list-item > dt {
+  background: #a19283;
+  color: #fff;
+  font-size: 20px;
+  line-height: 60px;
+}
+
+#plan-area .list-item > dd {
+  border: 1px solid #ddd;
+  border-top: 0;
+  margin: 0;
+}
+
+#plan-area .deta-price {
+  background-color: #ece9e6;
+  padding: 24px 0;
+}
+
+#plan-area .price {
+  font-family: Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3",
+    "メイリオ", Meiryo, sans-serif;
+  font-size: 40px;
+}
+
+#plan-area .price > span {
+  font-size: 20px;
+}
+
+#plan-area .plan-table {
+  padding: 20px 10px;
+  line-height: 1.4;
+}
+
+#plan-area .list-item:nth-child(2) {
+  border: 5px solid #442607;
+}
+
+#plan-area .list-item:nth-child(2) > dt {
+  height: 55px;
+  background-color: #442607;
+  line-height: 55px;
+}
+
+#plan-area .list-item:nth-child(2) > .plan-table:last-child {
+  border-bottom: none;
+  padding: 18px 10px;
+}
+
+#plan-area .plan-btn > a {
+  display: inline-block;
 }
 
 @media (max-width: 991px) {
@@ -525,34 +610,13 @@ header .dropdown-group > a:hover {
     padding: 0 20px;
   }
 
-  #top-area .heading-title {
-    font-size: 20px;
-  }
-
-  #top-area .heading-contents {
-    line-height: 2;
-  }
-
   #summary-area .summary {
-    margin-bottom: 40px;
     padding: 0 20px;
+    margin-bottom: 40px;
   }
 
   #summary-area .summary-lead {
     padding: 35px 25px;
-  }
-
-  #summary-area .summary-title {
-    font-size: 20px;
-  }
-
-  #summary-area .summary-desc {
-    line-height: 2;
-  }
-
-  #card-area .card-space {
-    margin-bottom: 40px;
-    padding: 0 20px;
   }
 
   #card-area .card-parts {
@@ -566,13 +630,6 @@ header .dropdown-group > a:hover {
   #card-area .card-text {
     margin-bottom: 18px;
     line-height: 2;
-  }
-
-  #card-area .card-btn > a {
-    min-width: 180px;
-    height: 45px;
-    font-size: 12px;
-    line-height: 45px;
   }
 
   #info-area .info-space {
@@ -628,6 +685,53 @@ header .dropdown-group > a:hover {
 
   #info-area .info-img-content > time {
     font-size: 10px;
+  }
+
+  #plan-area .plan > h2 {
+    margin-bottom: 6px;
+  }
+
+  #plan-area .plan > p {
+    margin-bottom: 33px;
+    line-height: 2;
+  }
+
+  #plan-area .plan-list {
+    margin-bottom: 0;
+    padding: 0 15px;
+  }
+
+  #plan-area .list-item {
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  #plan-area .list-item > dt {
+    font-size: 16px;
+    line-height: 45px;
+  }
+
+  #plan-area .deta-price {
+    padding: 17px 10px;
+  }
+
+  #plan-area .price {
+    margin-bottom: 10px;
+    font-size: 36px;
+  }
+
+  #plan-area .plan-table {
+    padding: 12px;
+  }
+
+  #plan-area .list-item:nth-child(2) > dt {
+    height: 40px;
+    line-height: 35px;
+  }
+
+  #plan-area .list-item:nth-child(2) > .plan-table:last-child {
+    padding: 12px 10px;
+    margin-bottom: 0;
   }
 }
 /* <-------- main */
