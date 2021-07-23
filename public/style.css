@@ -17,7 +17,9 @@ a:hover {
 #top-area .heading-title,
 #summary-area .summary-title,
 #info-area .info-title > h2,
-#plan-area .plan > h2 {
+#plan-area .plan > h2,
+#floorspace-area .floor-title,
+#footerinfo-area .info-logo {
   font-family: "Times New Roman", "游明朝", "Yu Mincho", "游明朝体", "YuMincho",
     "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", "HiraMinProN-W3", "HGS明朝E",
     "ＭＳ Ｐ明朝", "MS PMincho", serif;
@@ -26,7 +28,8 @@ a:hover {
 
 #top-area .heading-title,
 #summary-area .summary-title,
-#plan-area .plan > h2 {
+#plan-area .plan > h2,
+#floorspace-area .floor-title {
   font-size: 36px;
   margin-bottom: 10px;
   line-height: 1.5;
@@ -94,7 +97,9 @@ a:hover {
   header .header-inner,
   #card-area .card-space,
   #info-area .news-event,
-  #plan-area .plan {
+  #plan-area .plan,
+  #floorspace-area .floorspace,
+  #footerinfo-area .info {
     padding: 0 20px;
   }
 
@@ -114,6 +119,11 @@ a:hover {
     min-width: 180px;
     font-size: 12px;
     line-height: 45px;
+  }
+
+  #footerinfo-area .info-logo,
+  #footerinfo-area .address {
+    margin-bottom: 12px;
   }
 }
 /* <-------- common */
@@ -737,5 +747,175 @@ header .dropdown-group > a:hover {
 /* <-------- main */
 
 /* --------> footer */
+footer {
+  position: relative;
+  display: block;
+}
 
+#floorspace-area {
+  background-image: url(https://demo.tcd-theme.com/tcd063/wp-content/uploads/2018/09/sp_foot.jpg);
+  height: 500px;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+#floorspace-area::before {
+  background: rgba(30, 10, 0, 0.5);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+}
+
+#floorspace-area .floorspace {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#floorspace-area .floor-title {
+  color: #fff;
+  transition: color 0.2s ease;
+  text-align: center;
+}
+
+#floorspace-area .floorspace > p {
+  margin-bottom: 39px;
+  color: #fff;
+  line-height: 2.6;
+  text-align: center;
+}
+
+#floorspace-area .floor-link {
+  margin: 0;
+  padding-left: 0;
+  display: flex;
+}
+
+#floorspace-area .floor-link > li {
+  margin: 0 15px;
+  position: relative;
+  width: 400px;
+  height: 120px;
+  overflow: hidden;
+}
+
+#floorspace-area .floor-link > li > a {
+  display: block;
+  height: 100%;
+}
+
+#floorspace-area .floor-link > li > a > span {
+  color: #442602;
+  position: absolute;
+  right: 0;
+  width: 170px;
+  background-color: #fff;
+  line-height: 120px;
+  z-index: 1;
+}
+
+#floorspace-area .floor-link > li > a > span::before {
+  position: absolute;
+  left: -120px;
+  border-width: 120px 60px;
+  border-style: solid;
+  border-color: transparent #fff #fff transparent;
+  content: "";
+}
+
+#floorspace-area .floor-link > li > a > img {
+  transition-duration: 0.5s;
+  transform: scale(1);
+}
+
+#floorspace-area .floor-link > li > a:hover img {
+  transform: scale(1.2);
+}
+
+#footerinfo-area {
+  background-color: #fff;
+  padding: 60px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+#footerinfo-area .info {
+  text-align: center;
+}
+
+#footerinfo-area .info-logo {
+  font-size: 25px;
+  display: inline-block;
+  margin-bottom: 21px;
+}
+
+#footerinfo-area .info-logo > a > img {
+  width: 143px;
+}
+
+#footerinfo-area .address {
+  margin-bottom: 21px;
+  font-size: 14px;
+  line-height: 2.2;
+}
+
+#footerinfo-area .icons > a {
+  margin-right: 12px;
+  transition-duration: 0.2s;
+}
+
+#footerinfo-area .icons > a:hover {
+  color: #999;
+  cursor: pointer;
+}
+
+#footerinfo-area .icons > a > .fa-wifi {
+  transform: rotate(48deg);
+}
+
+@media (max-width: 991px) {
+  #floorspace-area {
+    height: auto;
+    padding: 53px 0;
+  }
+
+  #floorspace-area .floorspace > h2 {
+    font-size: 28px;
+  }
+
+  #floorspace-area .floorspace > p {
+    margin-bottom: 17px;
+    line-height: 2;
+  }
+}
+
+@media (max-width: 900px) {
+  #floorspace-area .floor-link {
+    display: block;
+  }
+
+  #floorspace-area .floor-link > li:nth-child(2) {
+    margin-top: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  #floorspace-area .floorspace > h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+
+  #footerinfo-area {
+    padding: 40px 0;
+  }
+
+  #footerinfo-area .info-logo > a > img {
+    width: 110px;
+  }
+}
 /* <-------- footer */
