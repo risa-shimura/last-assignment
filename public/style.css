@@ -753,7 +753,7 @@ footer {
 }
 
 #floorspace-area {
-  background-image: url(https://demo.tcd-theme.com/tcd063/wp-content/uploads/2018/09/sp_foot.jpg);
+  background-image: url(./images/floorspace-background.jpg);
   height: 500px;
   background-position: center center;
   background-size: cover;
@@ -803,6 +803,7 @@ footer {
   width: 400px;
   height: 120px;
   overflow: hidden;
+  list-style: none;
 }
 
 #floorspace-area .floor-link > li > a {
@@ -822,6 +823,7 @@ footer {
 
 #floorspace-area .floor-link > li > a > span::before {
   position: absolute;
+  top: 0;
   left: -120px;
   border-width: 120px 60px;
   border-style: solid;
@@ -832,6 +834,9 @@ footer {
 #floorspace-area .floor-link > li > a > img {
   transition-duration: 0.5s;
   transform: scale(1);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 #floorspace-area .floor-link > li > a:hover img {
@@ -897,6 +902,11 @@ footer {
 @media (max-width: 900px) {
   #floorspace-area .floor-link {
     display: block;
+    width: 100%;
+  }
+
+  #floorspace-area .floor-link > li {
+    margin: 0 auto;
   }
 
   #floorspace-area .floor-link > li:nth-child(2) {
@@ -916,6 +926,23 @@ footer {
 
   #footerinfo-area .info-logo > a > img {
     width: 110px;
+  }
+}
+
+@media (max-width: 500px) {
+  #floorspace-area .floor-link > li {
+    width: 100%;
+  }
+
+  #floorspace-area .floor-link > li > a > span {
+    display: flex;
+    align-items: center;
+    width: 140px;
+  }
+
+  #floorspace-area .floor-link > li > a > span::before {
+    left: -100px;
+    border-width: 100px 50px;
   }
 }
 /* <-------- footer */
