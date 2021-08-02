@@ -819,11 +819,11 @@ footer {
   background-color: #fff;
   line-height: 120px;
   z-index: 1;
+  font-size: 16px;
 }
 
 #floorspace-area .floor-link > li > a > span::before {
   position: absolute;
-  top: 0;
   left: -120px;
   border-width: 120px 60px;
   border-style: solid;
@@ -937,7 +937,7 @@ footer {
   #floorspace-area .floor-link > li > a > span {
     display: flex;
     align-items: center;
-    width: 140px;
+    font-size: 14px;
   }
 
   #floorspace-area .floor-link > li > a > span::before {
