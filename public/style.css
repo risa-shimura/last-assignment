@@ -833,9 +833,8 @@ footer {
 
 #floorspace-area .floor-link > li > a > img {
   transition-duration: 0.5s;
-  transform: scale(1);
-  height: 100%;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -926,6 +925,10 @@ footer {
 
   #footerinfo-area .info-logo > a > img {
     width: 110px;
+  }
+
+  #floorspace-area .floor-link > li > a:hover img {
+    transform: none;
   }
 }
 
