@@ -931,13 +931,17 @@ footer .footer-menu {
   padding-left: 0;
 }
 
-footer .footer-items {
+footer .footer-menu > li {
   list-style-type: none;
 }
 
-footer .footer-item::before {
+footer .footer-menu > li::before {
   margin: 0 10px;
   content: "|";
+}
+
+footer .footer-menu > li:first-child::before {
+  content: "";
 }
 
 footer .footer-logo {
@@ -967,12 +971,12 @@ footer small {
     padding: 30px 20px;
   }
 
-  footer .footer-items {
+  footer .footer-menu > li {
     width: 50%;
     line-height: 2.4;
   }
 
-  footer .footer-item::before {
+  footer .footer-menu > li::before {
     margin: 0;
     content: "";
   }
