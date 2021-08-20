@@ -942,6 +942,7 @@ footer .footer-menu > li::before {
 
 footer .footer-menu > li:first-child::before {
   content: "";
+  margin: 0;
 }
 
 footer .footer-logo {
