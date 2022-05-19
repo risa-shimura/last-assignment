@@ -32,3 +32,14 @@
 ![スクリーンショット (432)](https://user-images.githubusercontent.com/73959158/169298163-c784e42e-763f-4759-a578-87796bf2c12f.png)
 ![スクリーンショット (433)](https://user-images.githubusercontent.com/73959158/169298177-a6b8347c-f30a-4fc1-a6f0-2694ad9bbc02.png)
 ![スクリーンショット (435)](https://user-images.githubusercontent.com/73959158/169298204-11d6d04c-e7b3-4325-9613-b07433d55317.png)
+
+# 作成動機
+株式会社Shinonomeのフロントエンドエンドコースの最終課題
+お手本を見て、レビューをもらいながら作成した。
+
+# 使用言語, フレームワーク, 開発環境等
+HTML, CSS, Bootstrap, VScode, GitHub
+
+# 大変だったところ
+・画面幅を小さくしても崩れないようにすること
+・コードをまとめたり無駄なコードを削除したこと
